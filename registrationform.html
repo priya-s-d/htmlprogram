@@ -1,0 +1,41 @@
+<html>
+<hed>
+<script>
+function validate()
+{
+var name=document.getElementById("stud_name").value;
+if(name=="")
+{
+document.getElementById("error_name").innerHTML="please enter the name"
+}
+var email=document.getById("stud_email").value;
+if(email=="")
+{
+//window.alert("please enter the email");
+}
+}
+</script>
+</head>
+<body>
+<form name="REGISTRATION">
+<table border="1">
+<tr>
+<td colspan="2"><b>STUDENT REGISTRATION</b></td>
+</tr>
+<tr>
+<td><input type="text" name="stud_nme"id="stud_nme"/>
+<h1 id="error_name">_</h1>
+</td>
+</tr>
+<tr>
+<td>E.mail</td>
+<td><input type="text" name="stud_email" id="stud_email"/></td>
+</tr>
+<td colspan="2"><input type="button"value="registration" onclick="vaidate()"/></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+
+
